@@ -1,19 +1,25 @@
 <% include partials/header %>
 
+    <div class="jumbotron shopJumbotron">
+        <h1 class="description">Shop</h1>
+    </div>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-3 pink">
-            hello            
+
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% products.forEach(function(product){  %>
+        <div class="col-lg-3 col-md-2">
+            <div class="thumbnail">
+                <img src="<%= product.image %>" alt="">
+                <div class="caption">
+                    <h4><%= product.name %></h4>
+                    <hr>
+                    <p>£<%= product.price %></p>
+                    <p><a href="/product" class="btn btn-primary">More Info</a></p> <!-- href will link to product ID, not currently set up -->
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3 pink">
-            hello            
-        </div>
-        <div class="col-lg-3 pink">
-            hello            
-        </div>
-        <div class="col-lg-3 pink">
-            hello            
-        </div>
+        <% }); %>
+        
     </div>
     
 </div>

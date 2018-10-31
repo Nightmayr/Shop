@@ -1,3 +1,15 @@
+body {
+    /* background: #9dbad7 */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ecf0f1;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ecf0f1;
+}
+
 .jumbotron {
     color: #2c3e50;
     background: #ecf0f1
@@ -10,4 +22,21 @@
 .pink {
     background: pink;
     border: 1px solid purple
+}
+
+.description {
+    text-align: center
+}
+
+.navbar {
+    margin-bottom: 0;
+    text-b
+}
+
+.shopJumbotron {
+    padding: 10em
+}
+
+.indexJumbo {
+    margin-top: 2em
 }
